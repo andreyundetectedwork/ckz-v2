@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKZ Ribnica C — Podgorica</title>
+  <meta name="description" content="Kulturni centar, kafić i bar pored reke Ribnice u Podgorici. Sveža kafa, svirke uživo, kokteli, burgeri i letnja terasa.">
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Top Bar & Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-accent">CKZ</span> RIBNICA <span class="logo-badge">C</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#vibe" class="nav-link" data-i18n="nav_vibe">Atmosfera</a></li>
+          <li><a href="#menu" class="nav-link" data-i18n="nav_menu">Meni</a></li>
+          <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">Utisci</a></li>
+          <li><a href="#location" class="nav-link" data-i18n="nav_contacts">Kontakti</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="sr">SR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+
+        <a href="https://glovoapp.com/sr/me/podgorica/stores/ckz-ribnica-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener" class="btn btn-glovo btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span data-i18n="order_glovo">Glovo</span>
+        </a>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <span class="logo-accent">CKZ</span> RIBNICA <span class="logo-badge">C</span>
+        </div>
+        <button class="drawer-close" id="drawerClose">&times;</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="#vibe" class="drawer-link" data-i18n="nav_vibe">Atmosfera</a>
+        <a href="#menu" class="drawer-link" data-i18n="nav_menu">Meni</a>
+        <a href="#reviews" class="drawer-link" data-i18n="nav_reviews">Utisci</a>
+        <a href="#location" class="drawer-link" data-i18n="nav_contacts">Kontakti & Mape</a>
+      </nav>
+      <div class="drawer-footer">
+        <div class="lang-switcher drawer-lang">
+          <button class="lang-btn active" data-lang="sr">SR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        <a href="tel:+38267200575" class="btn btn-primary btn-full">
+          📞 +382 67 200 575
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="assets/img_01.jpg" alt="Letnja terasa pored reke Ribnice" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="rating-badge-pill">
+          <span class="stars">★ 4.4</span>
+          <span class="divider">•</span>
+          <span data-i18n="reviews_count">216 recenzija</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="hero_title">Tvoje omiljeno mesto uz reku Ribnicu.</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Jutarnja kafa, autorski kokteli, sočni burgeri i svirke uživo ispod letnjih girlandi u srcu Podgorice.</p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary btn-lg" data-i18n="hero_cta_menu">Pogledaj Meni</a>
+          <a href="https://glovoapp.com/sr/me/podgorica/stores/ckz-ribnica-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" data-i18n="hero_cta_glovo">Naruči na Glovo</a>
+        </div>
+
+        <div class="hero-features-chips">
+          <span class="chip">☕ Kafa & Doručak</span>
+          <span class="chip">🎷 Svirke Uživo</span>
+          <span class="chip">🍹 Koktel Bar</span>
+          <span class="chip">🌿 Terasa na reci</span>
+          <span class="chip">🐶 Dog Friendly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atmosphere / Vibe Section -->
+  <section class="section vibe-section" id="vibe">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="vibe_tag">Kulturni prostor & Bar</span>
+        <h2 class="section-title" data-i18n="vibe_title">Vibe koji pokreće grad</h2>
+        <p class="section-desc" data-i18n="vibe_desc">Jedinstveno mesto na obali Ribnice. Preko dana — mirna oaza za kafu, rad i druženje uz reku. Uveče — epicentar živih nastupa, DJ večeri i sjajne energije.</p>
+      </div>
+
+      <div class="vibe-grid">
+        <div class="vibe-card main-card">
+          <img src="assets/img_02.jpg" alt="Svirka uživo u CKZ Ribnica" loading="lazy">
+          <div class="vibe-card-overlay">
+            <span class="vibe-badge" data-i18n="badge_live">Live Music</span>
+            <h3 data-i18n="vibe_card1_title">Koncerti & DJ Svirke</h3>
+            <p data-i18n="vibe_card1_desc">Pravi muzički centar sa posebnim šarmom i energijom u Podgorici.</p>
+          </div>
+        </div>
+
+        <div class="vibe-card">
+          <img src="assets/img_03.jpg" alt="Aperitivo Spritz na šanku" loading="lazy">
+          <div class="vibe-card-overlay">
+            <span class="vibe-badge" data-i18n="badge_bar">Bar & Sunset</span>
+            <h3 data-i18n="vibe_card2_title">Kokteli & Osveženje</h3>
+            <p data-i18n="vibe_card2_desc">Aperol, Limoncello Spritz i hladna piva za tople letnje večeri.</p>
+          </div>
+        </div>
+
+        <div class="vibe-card">
+          <img src="assets/img_04.jpg" alt="Burger Ribnica sa pomfritom" loading="lazy">
+          <div class="vibe-card-overlay">
+            <span class="vibe-badge" data-i18n="badge_food">Zalogaji</span>
+            <h3 data-i18n="vibe_card3_title">Burger & Kraft Hrana</h3>
+            <p data-i18n="vibe_card3_desc">100% juneće meso, tortilje, pizze i obilni ovali za ekipu.</p>
+          </div>
+        </div>
+
+        <div class="vibe-card">
+          <img src="assets/img_05.jpg" alt="Jutarnja kafa i doručak uz prozor" loading="lazy">
+          <div class="vibe-card-overlay">
+            <span class="vibe-badge" data-i18n="badge_morning">Morning Routine</span>
+            <h3 data-i18n="vibe_card4_title">Kafa & Priganice</h3>
+            <p data-i18n="vibe_card4_desc">Dojč kafa, sveži doručak i pogled na reku za savršen početak dana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="menu_tag">Nezaboravni ukusi</span>
+        <h2 class="section-title" data-i18n="menu_title">Naš Meni</h2>
+        <p class="section-desc" data-i18n="menu_desc">Od jutarnje kafe i tradicionalnih priganica do autorskih burgera, koktela i bogate karte vina i rakija.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-tabs-wrapper">
+        <div class="menu-tabs" id="menuTabs">
+          <button class="tab-btn active" data-category="all" data-i18n="cat_all">Sve</button>
+          <button class="tab-btn" data-category="food" data-i18n="cat_food">Hrana & Doručak</button>
+          <button class="tab-btn" data-category="coffee" data-i18n="cat_coffee">Topli Napici</button>
+          <button class="tab-btn" data-category="cocktails" data-i18n="cat_cocktails">Kokteli</button>
+          <button class="tab-btn" data-category="beer" data-i18n="cat_beer">Pivo & Sajder</button>
+          <button class="tab-btn" data-category="wine" data-i18n="cat_wine">Vina</button>
+          <button class="tab-btn" data-category="spirits" data-i18n="cat_spirits">Rakije & Žestina</button>
+          <button class="tab-btn" data-category="soft" data-i18n="cat_soft">Bezalkoholna Pića</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Menu Render Container -->
+      <div class="menu-grid-content" id="menuContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-between">
+        <div>
+          <span class="section-tag" data-i18n="reviews_tag">Iskrena iskustva</span>
+          <h2 class="section-title" data-i18n="reviews_title">Šta kažu naši gosti</h2>
+        </div>
+        <div class="rating-box-inline">
+          <div class="rating-num">4.4</div>
+          <div class="rating-meta">
+            <div class="stars-gold">★★★★★</div>
+            <span data-i18n="google_reviews_label">Google recenzije (216)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid">
+        <!-- Rendered via JS based on selected language -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Info Section -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="location-layout">
+        <div class="location-info">
+          <span class="section-tag" data-i18n="loc_tag">Gde se nalazimo</span>
+          <h2 class="section-title" data-i18n="loc_title">Poseti CKZ Ribnica C</h2>
+          <p class="section-desc" data-i18n="loc_desc">Smešteni u samom centru Podgorice, na zelenim obalama reke Ribnice. Nudimo predivnu terasu, prijatnu atmosferu i mesta za velike kompanije.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong data-i18n="info_address_title">Adresa</strong>
+                <p>Obala Ribnice, Podgorica, Crna Gora</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong data-i18n="info_phone_title">Telefon</strong>
+                <p><a href="tel:+38267200575">+382 67 200 575</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🛵</div>
+              <div>
+                <strong data-i18n="info_order_title">Dostava / Preuzimanje</strong>
+                <p data-i18n="info_order_text">Naručite omiljena jela preko Glovo aplikacije ili preuzmite na licu mesta.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🅿️</div>
+              <div>
+                <strong data-i18n="info_parking_title">Parkiranje</strong>
+                <p data-i18n="info_parking_text">Besplatan i plaćeni parking na ulici pored lokala.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🐕</div>
+              <div>
+                <strong data-i18n="info_pet_title">Dog Friendly</strong>
+                <p data-i18n="info_pet_text">Vaši ljubimci su uvek dobrodošli kod nas na terasi i u lokalu.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="loc-actions">
+            <a href="https://maps.google.com/?q=Obala+Ribnice,+Podgorica" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="btn_map">Otvori na Google Mapama</a>
+            <a href="https://glovoapp.com/sr/me/podgorica/stores/ckz-ribnica-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener" class="btn btn-glovo" data-i18n="btn_glovo_order">Naruči na Glovo</a>
+          </div>
+        </div>
+
+        <div class="location-map-card">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.5!2d19.26!3d42.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d929be59f0fbd%3A0x8673a55e1656c075!2sObala%20Ribnice%2C%20Podgorica!5e0!3m2!1sen!2sme!4v1680000000000" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="CKZ Ribnica C Mapa">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Quick Action Floating Bar -->
+  <div class="mobile-float-bar">
+    <a href="tel:+38267200575" class="float-btn float-call">
+      <span>📞</span> <span data-i18n="float_call">Pozovi</span>
+    </a>
+    <a href="#menu" class="float-btn float-menu">
+      <span>📜</span> <span data-i18n="float_menu">Meni</span>
+    </a>
+    <a href="https://glovoapp.com/sr/me/podgorica/stores/ckz-ribnica-pdg?utm_medium=organic&utm_campaign=google_reserve_place_order_action&utm_source=google" target="_blank" rel="noopener" class="float-btn float-glovo">
+      <span>🛵</span> <span>Glovo</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span class="logo-accent">CKZ</span> RIBNICA <span class="logo-badge">C</span>
+        </div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Kulturni prostor, kafa, svirke uživo i gastronomske užitke na obali reke Ribnice u Podgorici.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_nav_title">Navigacija</h4>
+        <ul>
+          <li><a href="#vibe" data-i18n="nav_vibe">Atmosfera</a></li>
+          <li><a href="#menu" data-i18n="nav_menu">Meni</a></li>
+          <li><a href="#reviews" data-i18n="nav_reviews">Utisci</a></li>
+          <li><a href="#location" data-i18n="nav_contacts">Kontakti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_contacts_title">Kontakti</h4>
+        <p>📍 Obala Ribnice, Podgorica</p>
+        <p>📞 <a href="tel:+38267200575">+382 67 200 575</a></p>
+        <p>💳 NFC / Bezgotovinsko plaćanje</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> CKZ Ribnica C. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
